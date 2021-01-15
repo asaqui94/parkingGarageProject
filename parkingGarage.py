@@ -20,8 +20,8 @@ class parkingGarage():
     def leaveGarage(self):
         if self.payment == 'paid':
             print('Thank you, have a nice day!')
-            tickets.append()
-            parkingSpaces.append()
+            self.tickets.append()
+            self.parkingSpaces.append()
         else:
             pay_now = input('Please enter your payment to leave.')
             return pay_now
@@ -34,12 +34,12 @@ class parkingGarage():
             print('You have 15 mins to leave')
         else:
             self.payment = input('Please enter your payment: ')
-            currentTicket[ticket] = 'paid'
+            currentTicket[self.tickets] = 'paid'
     
 
 tickets = [1,2,3,4,5,6,7,8,9,10]
 parkingSpaces = [1,2,3,4,5,6,7,8,9,10]
-currentTicket = parkingGarage({ticket: paid})
+currentTicket = parkingGarage({})
 
 def start_Garage():
     while True:
